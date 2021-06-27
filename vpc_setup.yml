@@ -97,11 +97,11 @@
          Name: vprofile_igw
       register: igw_out
 
-    - name: Setup public subnet route table
+    - name: Set up public subnet route table
       ec2_vpc_route_table:
         vpc_id: "{{ vpcout.vpc.id }}"
         region: "{{ region }}"
-        tags:
+        resource_tags:
           Name: Vprofile-PubRT
         subnets:
           - "{{ pubsub1_out.subnet.id }}"
@@ -109,5 +109,5 @@
           - "{{ pubsub3_out.subnet.id }}"
         routes:
           - dest: 0.0.0.0/0
-            gateway_id: "{{ igw_out.gateway.id }}"
+            gateway_id: "{{igw_out.gateway.id}}"
       register: pubRT_out
