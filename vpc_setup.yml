@@ -93,6 +93,6 @@
        vpc_id: "{{ vpcout.vpc.id}}"
        region: "{{region }}"
        state: "{{ state }}"
-       resources_tags:
+       resource_tags:
          Name: vprofile_igw
       register: igw_out
