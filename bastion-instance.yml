@@ -10,9 +10,9 @@
     - name: Import VPC out Variables
       include_vars: vars/output_vars
 
-    - name: Create vprofile ec2 key
+    - name: Create bastion ec2 key
       ec2_key:
-        name: vprofile-key
+        name: bastion-key
         region: "{{region}}"
       register: key_out
 
