@@ -2,7 +2,7 @@
 - name: Setup Vprofile stack
   hosts: localhost
   connection: local
-  gahter_facts: no
+  gather_facts: no
   tasks:
     - name: Import VPC setup Variable
       include_vars: vars/vpc-vpc-output_vars
