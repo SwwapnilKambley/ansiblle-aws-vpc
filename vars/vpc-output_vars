@@ -1,4 +1,3 @@
-region: us-east-2
 vpcid: vpc-0df64a0f92b57cd16
 pubsub1id: subnet-0d9d2c32284ec423f
 pubsub2id: subnet-08a05c83af7bf6a78
@@ -9,3 +8,4 @@ privsub3id: subnet-074babb943dc5f0a8
 igwid: igw-08e772774ec9173be
 pubRTid: rtb-0907a563e79cc4537
 NATGWid: nat-00664bd0be2d9e582
+privRTid: rtb-00f8dcf74f3b849ce
